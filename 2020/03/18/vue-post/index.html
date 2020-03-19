@@ -14,10 +14,11 @@
 
 
 <link rel="stylesheet" href="/hexo/lib/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"linche0859.github.io","root":"/hexo/","scheme":"Gemini","version":"7.7.2","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.json"};
+    var CONFIG = {"hostname":"linche0859.github.io","root":"/hexo/","scheme":"Gemini","version":"7.7.2","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"flat"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.json"};
   </script>
 
 <script> window._izq = window._izq || []; window._izq.push(["init" ]); 
@@ -179,6 +180,7 @@
     <i class="fa fa-arrow-up"></i>
     <span>0%</span>
   </div>
+  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
 
 
     <main class="main">
@@ -280,25 +282,6 @@ content
     
     
     
-        
-
-  <div class="followme">
-    <p>歡迎關注我的其它發布渠道</p>
-
-    <div class="social-list">
-
-        <div class="social-item">
-          <a target="_blank" class="social-link" href="/atom.xml">
-            <span class="icon">
-              <i class="fa fa-rss"></i>
-            </span>
-
-            <span class="label">RSS</span>
-          </a>
-        </div>
-    </div>
-  </div>
-
 
       <footer class="post-footer">
           <div class="post-tags">
@@ -437,7 +420,7 @@ content
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">linche</span>
+  <span class="author" itemprop="copyrightHolder">轉載文章時請附上作者及原文連結</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-area-chart"></i>
@@ -451,11 +434,6 @@ content
       <span class="post-meta-item-text">所需總閱讀時間 &asymp;</span>
     <span title="所需總閱讀時間">1 分鐘</span>
 </div>
-  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> 強力驅動 v4.2.0
-  </div>
-  <span class="post-meta-divider">|</span>
-  <div class="theme-info">主題 – <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v7.7.2
-  </div>
 
         
 
@@ -472,6 +450,8 @@ content
 
   
   <script src="/hexo/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
   <script src="/hexo/lib/velocity/velocity.min.js"></script>
   <script src="/hexo/lib/velocity/velocity.ui.min.js"></script>
 
@@ -484,6 +464,8 @@ content
 
 
 <script src="/hexo/js/next-boot.js"></script>
+
+<script src="/hexo/js/bookmark.js"></script>
 
 
 
